@@ -1,0 +1,134 @@
+import { ReactNode } from "react";
+
+// 메타 태그 START!
+export interface MetaProps {
+  title: string | undefined;
+  keywords: string | undefined;
+  description: string | undefined;
+  ogTitle: string | undefined;
+  ogDescription: string | undefined;
+	ogImage: string | undefined;
+	ogURL: string | undefined;
+	ogType: string | undefined;
+}
+// 메타 태그 END!
+
+// 호버시 클래스 추가 START!
+export interface IsHoverProps {
+  children: ReactNode;
+  baseClass: string;
+  hoverClass: string;
+}
+// 호버시 클래스 추가 END!
+
+// 링크 컴포넌트 START!
+export interface ListLinkProps {
+  linkTo: string;
+  title?: string;
+  baseClass?: string;
+	target?: string;
+	rel?: string;
+	ariaLabel?: string;
+	image?: string;
+	svgWH?: string;
+	svgColor?: string;
+	path?: string;
+	count?: number;
+	onClick?: () => void;
+}
+// 링크 컴포넌트 END!
+
+// 카테고리 링크 컴포넌트 START!
+export interface CategoryLinksProps {
+  category?: string;
+	categoryClass?: string;
+  links: {
+    linkInfo: {
+      linkTo: string;
+      title?: string;
+    };
+    svgInfo?: {
+      svgWH?: string;
+      svgColor?: string;
+      path?: string;
+    };
+  }[];
+	icons?: boolean;
+	categoryCapital?: boolean;
+}
+// 카테고리 링크 컴포넌트 END!
+
+// SVG 컴포넌트 START!
+export interface SvgProps {
+	svgWH?: string;
+	svgColor?: string;
+	path?: string;
+	path2?: string;
+}
+// 카테고리 링크 컴포넌트 END!
+
+// 카드 컴포넌트 START!
+export interface CardProps {
+	mdFile?: string;
+  badge?: string;
+	badge2?: string;
+  image?: string;
+  date?: string;
+	sortDate?: string;
+  title: string;
+  subTitle?: string;
+	link?: string;
+	type?: string;
+  skills?: { name: string; color: string; icon: string }[];
+  hashs?: { name: string }[];
+}
+
+export interface Mapping {
+  cards: CardProps[];
+}
+// 카드 컴포넌트 END!
+
+// 카드 페이지네이션 컴포넌트 START!
+export interface CardPaginationProps {
+  filteredCards: CardProps[]; // 타입 정의
+	sessionName: string;
+	currentPage: number;
+	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+}
+// 카드 페이지네이션 컴포넌트 END!
+
+// 이전, 다음 페이지 URL START!
+export interface PageUrlsProps {
+	hyphenRemoval: string;
+	cards: CardProps[];
+	basePath: string;
+}
+// 이전, 다음 페이지 URL END!
+
+// 해시태그 필터링 START!
+export interface HashsProps {
+  selectedHash: string | null;
+  setSelectedHash: React.Dispatch<React.SetStateAction<string | null>>;
+  uniqueHashs: string[];
+  sessionName: string;
+	setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
+}
+// 해시태그 필터링 END!
+
+// 명언 컴포넌트 START!
+export interface SayingProps {
+  say: string;
+  writer: string;
+	job: string;
+};
+
+export interface SayingComponentProps {
+  sessionName: string;
+};
+// 명언 컴포넌트 END!
+
+// 헤더 컴포넌트 START!
+export interface AsideContextProps {
+  trueActive: () => void;
+}
+// 헤더 컴포넌트 END!

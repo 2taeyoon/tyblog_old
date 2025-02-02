@@ -1,0 +1,152 @@
+.blog, .post_view {
+	pre > code > span, span, pre, code, li, strong, s, a, p	{ 
+		font-size: 1.8rem;
+		line-height: 170%;
+		@media (max-width: 640px) { line-height: 180%; }
+	}
+
+	h1 {
+		display: block;
+		font-size: 4.0rem;
+		margin: 2.6rem 0 1.6rem 0;
+		font-weight: bold;
+	}
+
+	h2 {
+		display: block;
+		font-size: 3.2rem;
+		margin: 4.0rem 0 1.6rem 0;
+		font-weight: bold;
+	}
+
+	h3 {
+		display: block;
+		font-size: 2.4rem;
+		margin: 2.4rem 0 1.6rem 0;
+		font-weight: bold;
+	}
+
+	h4 {
+		display: block;
+		font-size: 2.0rem;
+		margin: 2.4rem 0 1.6rem 0;
+		font-weight: bold;
+	}
+
+	h5 {
+		display: block;
+		font-size: 0.83em;
+		margin-block-start: 1.67em;
+		margin-block-end: 1.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+	}
+
+	h6 {
+		display: block;
+		font-size: 0.67em;
+		margin-block-start: 2.33em;
+		margin-block-end: 2.33em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+	}
+
+	h1, h2, h3, h4, h5, h6 { font-family: "Pretendard", "Malgun Gothic", sans-serif; }
+
+	p {
+		display: block;
+		margin: 1.8rem 0;
+	}
+
+	blockquote {
+		display: block;
+		border-left: 3px solid #1D55AA;
+		padding: 16px;
+		margin: 16px 0;
+		background-color: #F8F9FA;
+	}
+
+	blockquote > p { 
+		margin: 0; 
+	}
+
+	blockquote > ol, blockquote > ul { 
+		width: calc(100% - 24px); margin: 0 0 0 24px;
+	}
+
+	ol {
+		display: block;
+		list-style-type: decimal;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin-inline-start: 18px;
+		margin-inline-end: 0;
+		li { list-style: decimal; }
+	}
+
+	ul {
+		display: block;
+		list-style-type: disc;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin-inline-start: 18px;
+		margin-inline-end: 0;
+		li { list-style: disc; }
+	}
+
+	a {
+		color: #3333ff;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	hr {
+		margin: 48px 0;
+		border: 1px solid #eeeeee;
+		@media (max-width: 1280px) { margin: 36px 0; }
+		@media (max-width: 768px) { margin: 24px 0; }
+	}
+
+	code {
+		padding: 1px 6px;
+		border: none;
+		border-radius: 3px;
+		background-color: #e3e6e9;
+		font-family: "Pretendard", "Malgun Gothic", sans-serif;
+		font-weight: 500;
+	}
+
+	pre {
+		margin: 1em 0;
+		border-radius: 4px;
+		overflow-x: auto;
+		line-height: 150%;
+	}
+
+	pre > code {
+		border: none;
+		text-align: left;
+		white-space: pre;
+		word-spacing: normal;
+		word-break: normal;
+		overflow-wrap: normal;
+		hyphens: none;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	strong { 
+		font-weight: bold; 
+	}
+}
